@@ -1,4 +1,4 @@
-package chap10;
+package GFG.arrays;
 
 import java.util.Arrays;
 

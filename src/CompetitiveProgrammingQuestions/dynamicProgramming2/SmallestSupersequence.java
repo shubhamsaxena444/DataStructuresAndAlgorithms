@@ -18,7 +18,7 @@ Sample Output:
 3
 Sample Output Explanation:
 Their smallest super-sequence can be "abc" which has length=3.*/
-public class SmallestSubsequence {
+public class SmallestSupersequence {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s1 = sc.nextLine();

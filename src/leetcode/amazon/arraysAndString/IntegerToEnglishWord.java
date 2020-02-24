@@ -1,5 +1,7 @@
 package leetcode.amazon.arraysAndString;
 
+import java.util.Scanner;
+
 public class IntegerToEnglishWord {
 
     public static void main(String[] args) {
@@ -11,9 +13,6 @@ public class IntegerToEnglishWord {
      *
      */
     private void print() {
-        // System.out.println(Unit.getValue(6));
-        // final Scanner sc = new Scanner(System.in);
-        // final int n = sc.nextInt();
         for (int n = 1; n < Integer.MAX_VALUE;) {
             if (n < 0) {
                 System.exit(0);
@@ -21,7 +20,8 @@ public class IntegerToEnglishWord {
             System.out.println(n + " ->  " + numToWords(n).toString());
             n = n * 13;
         }
-    }
+
+       }
 
     private enum Unit {
         One(1), Two(2), Three(3), Four(4), Five(5), Six(6), Seven(7), Eight(8), Nine(9);
@@ -62,7 +62,7 @@ public class IntegerToEnglishWord {
     }
 
     private enum Power {
-        Hundred(100), Thousand(1000), Million(1000000);
+        Hundred(100), Thousand(1000), Million(1000000),Billion(1000000000);
         private final int value;
 
         Power(int value) {
@@ -85,35 +85,24 @@ public class IntegerToEnglishWord {
         if (n == 0) {
             return s.append("Zero");
         }
-        // find the number of digits in n;
-        // int digit = 0;
-        // while (num >= 0) {
-        // digit++;
-        // num /= 10;
-        // }
+
         num = n;
         while (num > 0) {
-            if (num >= Power.Million.value) {
-                printTens(s, num / Power.Million.value);
-                s.append(" " + Power.Million.name() + " ");
+            if (num >= Power.Billion.value) {
+                printPrefix(s, num / Power.Billion.value);
+                s.append(" " + Power.Billion.name() );
+                num %= Power.Billion.value;
+            }else if (num >= Power.Million.value) {
+                printPrefix(s, num / Power.Million.value);
+                s.append(" " + Power.Million.name() );
                 num %= Power.Million.value;
             } else if (num >= Power.Thousand.value) {
-                int x = num / Power.Thousand.value;
-                if (x >= Power.Hundred.value) {
-                    printTens(s, x / Power.Hundred.value);
-                    s.append(" " + Power.Hundred.name() + " ");
-                    x %= Power.Hundred.value;
-                }
-                printTens(s, x);
-                s.append(" " + Power.Thousand.name() + " ");
+                printPrefix(s, num / Power.Thousand.value);
+                s.append(" " + Power.Thousand.name() );
                 num %= Power.Thousand.value;
-            } else if (num >= Power.Hundred.value) {
-
-                printTens(s, num / Power.Hundred.value);
-                s.append(" " + Power.Hundred.name() + " ");
-                num %= Power.Hundred.value;
-            } else {
-                printTens(s, num);
+            }else{
+                printPrefix(s, num);
+                //remember to put num =0 , when done
                 num = 0;
             }
         }
@@ -123,18 +112,29 @@ public class IntegerToEnglishWord {
 
     /**
      * @param s
-     * @param num
+     * @param num can be from 1 upto 999
      */
-    private void printTens(final StringBuilder s, int num) {
+    private void printPrefix(final StringBuilder s, int num) {
+        while(num>0) {
 
-        if (num >= Ten.Twenty.value && num <= 99) {
-            final int x = num / Ten.Ten.value;
-            s.append(Ten.getValue(x * 10));
-            s.append(" " + Unit.getValue(num % 10));
-        } else if (num >= Ten.Ten.value && num <= Ten.Nineteen.value) {
-            s.append(Ten.getValue(num));
-        } else {
-            s.append(Unit.getValue(num));
+            if (num >= Power.Hundred.value && num <= 999) {
+                final int x = num / Power.Hundred.value;
+                s.append(" " + Unit.getValue(x));
+                s.append(" " + Power.getValue(100));
+                num %= Power.Hundred.value;
+            }else if (num >= Ten.Twenty.value && num <= 99) {
+                final int x = num / Ten.Ten.value;
+                s.append(" "+ Ten.getValue(x * 10));
+                num%=10;
+            } else if (num >= Ten.Ten.value && num <= Ten.Nineteen.value) {
+                s.append(" "+Ten.getValue(num));
+                //remember to put num =0 , when done
+                num=0;
+            } else {
+                s.append(" "+Unit.getValue(num));
+                //remember to put num =0 , when done
+                num=0;
+            }
         }
     }
 }

@@ -60,6 +60,11 @@ public class MomosMarket {
         //for each day , find the lower bound in price array with logn complexity and print the output
         //https://stackoverflow.com/questions/15603832/java-equivalent-of-c-equal-range-or-lower-bound-upper-bound
         for(int i =0;i<q;i++){
+            /*TreeSet<Integer> hs = new TreeSet<>();
+            hs= (TreeSet<Integer>) Arrays.stream(price).boxed().collect(Collectors.toSet());
+            hs.lower(day[i]);  //this returns key strictly less than k, or null but not index
+*/
+
             int ind = Collections.binarySearch(l, day[i]);
             //if element is found , then the position of the element in price is the total momos had and money remaining is 0
             if(ind>=0){

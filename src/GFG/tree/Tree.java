@@ -1,6 +1,5 @@
-package tree;
+package GFG.tree;
 
-import tree.TestBinaryTree.bool;
 
 public interface Tree<T> {
 
@@ -30,6 +29,6 @@ public interface Tree<T> {
 
 	int leafPrint(Node<T> root2);
 
-	Node<T> findNode(Node<T> root, T x, bool bool);
+	Node<T> findNode(Node<T> root, T x, TestBinaryTree.bool bool);
 
 }

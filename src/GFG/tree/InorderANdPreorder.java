@@ -1,4 +1,4 @@
-package tree;
+package GFG.tree;
 
 public class InorderANdPreorder<T> {
 	static int preorder = 0;

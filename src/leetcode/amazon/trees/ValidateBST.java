@@ -14,10 +14,6 @@ public class ValidateBST {
 
         if(max !=null && r.val >= max)return false;
 
-        if(check(r.left,min,r.val) && check(r.right,r.val,max)){
-            return true;
-        }else{
-            return false;
-        }
+        return check(r.left,min,r.val) && check(r.right,r.val,max);
     }
 }

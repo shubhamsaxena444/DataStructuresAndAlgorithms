@@ -1,4 +1,4 @@
-package GFG.intrerviewBit;
+package GFG.intrerviewBit.binarySearch;
 import java.util.*;
 import java.util.stream.Collectors;
 

@@ -1,4 +1,4 @@
-package linkedList;
+package GFG.linkedList;
 
 public class Node<T> {
 	public T data;

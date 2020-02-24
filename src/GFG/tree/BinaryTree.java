@@ -1,4 +1,4 @@
-package tree;
+package GFG.tree;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +8,6 @@ import java.util.Queue;
 import java.util.Stack;
 import java.util.TreeMap;
 
-import tree.TestBinaryTree.bool;
 
 public class BinaryTree<T> implements Tree<T> {
 	public Node<T> root;
@@ -333,7 +332,6 @@ public class BinaryTree<T> implements Tree<T> {
 
 	/**
 	 * @param root2
-	 * @param count
 	 */
 	private int leafCountUtil(Node<T> root2) {
 		final Node<T> cur = root2;
@@ -350,7 +348,7 @@ public class BinaryTree<T> implements Tree<T> {
 
 	// this method returns the node in which x exists
 	@Override
-	public Node<T> findNode(Node<T> root, T x, bool bool) {
+	public Node<T> findNode(Node<T> root, T x, TestBinaryTree.bool bool) {
 
 		final Node<T> p = null;
 
@@ -360,11 +358,9 @@ public class BinaryTree<T> implements Tree<T> {
 
 	/**
 	 * @param x
-	 * @param f
-	 * @param cur
 	 * @return
 	 */
-	private Node<T> findNodeUtil(T x, Node<T> root, Node<T> p, bool b) {
+	private Node<T> findNodeUtil(T x, Node<T> root, Node<T> p, TestBinaryTree.bool b) {
 		Node<T> f = null;
 
 		if (root == null) {

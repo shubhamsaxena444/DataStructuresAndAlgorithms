@@ -1,4 +1,4 @@
-package tree;
+package GFG.tree;
 
 public class Node<T> {
 	public T data;

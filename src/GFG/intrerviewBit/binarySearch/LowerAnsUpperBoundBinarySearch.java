@@ -1,4 +1,4 @@
-package GFG.intrerviewBit;
+package GFG.intrerviewBit.binarySearch;
 
 public class LowerAnsUpperBoundBinarySearch {
     public int[] searchRange(final int[] A, int B) {

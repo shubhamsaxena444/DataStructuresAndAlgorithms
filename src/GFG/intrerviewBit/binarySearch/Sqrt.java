@@ -1,4 +1,4 @@
-package GFG.intrerviewBit;
+package GFG.intrerviewBit.binarySearch;
 
 public class Sqrt {
     public int sqrt(int n) {

@@ -1,4 +1,4 @@
-package tree;
+package GFG.tree;
 
 public class TestBinaryTree {
 
@@ -51,7 +51,7 @@ public class TestBinaryTree {
 		}
 	}
 
-	class bool {
+	public class bool {
 		boolean isSingleChild = false;
 
 	}

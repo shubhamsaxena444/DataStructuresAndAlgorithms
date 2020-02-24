@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package GFG.DP.GFG_must_do;
 
 import utils.Util;
 

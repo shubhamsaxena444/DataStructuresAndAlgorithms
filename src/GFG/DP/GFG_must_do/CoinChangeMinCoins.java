@@ -1,4 +1,6 @@
-package leetcode.amazon.dp;
+package GFG.DP.GFG_must_do;
+
+import java.util.Arrays;
 
 public class CoinChangeMinCoins {
     public static void main(String[] args) {
@@ -34,39 +36,39 @@ public class CoinChangeMinCoins {
 
     // m is size of coins array
     // (number of different coins)
-    static int minCoinsSpaceOptimised(int coins[], int m, int V)
+    static int minCoinsSpaceOptimised(int coins[], int m, int n)
     {
         // table[i] will be storing
         // the minimum number of coins
         // required for i value. So
         // table[V] will have result
-        int table[] = new int[V + 1];
-
+        int dp[] = new int[n + 1];
+        Arrays.fill(dp,Integer.MAX_VALUE);
         // Base case (If given value V is 0)
-        table[0] = 0;
+        dp[0] = 0;
 
-        // Initialize all table values as Infinite
-        for (int i = 1; i <= V; i++)
-            table[i] = Integer.MAX_VALUE;
+
 
         // Compute minimum coins required for all
         // values from 1 to V
-        for (int i = 1; i <= V; i++)
+        for (int i = 1; i <= n; i++)
         {
             // Go through all coins smaller than i
             for (int j = 0; j < m; j++)
                 if (coins[j] <= i)
                 {
-                    int sub_res = table[i - coins[j]];
-                    if (sub_res != Integer.MAX_VALUE
-                            && sub_res + 1 < table[i])
-                        table[i] = sub_res + 1;
+                    int include = dp[i - coins[j]] != Integer.MAX_VALUE ? 1+ dp[i - coins[j]] : Integer.MAX_VALUE;
+                    int exclude= dp[i];
 
-
+                   /* if (sub_res != Integer.MAX_VALUE
+                            && sub_res + 1 < dp[i])
+                        dp[i] = sub_res + 1;
+*/
+                    dp[i] = Math.min(include,exclude);
                 }
 
         }
-        return table[V];
+        return dp[n];
 
     }
 

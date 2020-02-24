@@ -1,4 +1,4 @@
-package chap10;
+package GFG.arrays;
 
 public class SearchRotated {
 

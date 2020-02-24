@@ -1,4 +1,4 @@
-package linkedList;
+package GFG.linkedList;
 
 public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 	public Node<T> head;
@@ -10,7 +10,9 @@ public class DoublyLinkedList<T> implements LinkedListInterface<T> {
 	public DoublyLinkedList() {
 	}
 
-	@Override
+
+
+    @Override
 	public Node<T> insertFirst(SinglyLinkedList<T> ll, T info) {
 		return null;
 	}

@@ -1,4 +1,4 @@
-package linkedList;
+package GFG.linkedList;
 
 public interface LinkedListInterface<T> {
 

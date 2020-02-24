@@ -1,4 +1,4 @@
-package linkedList;
+package GFG.linkedList;
 
 public class SinglyLinkedList<T> implements LinkedListInterface<T> {
 	private Node<T> head;

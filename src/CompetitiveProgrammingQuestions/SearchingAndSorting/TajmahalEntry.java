@@ -39,14 +39,15 @@ import java.util.*;
         //for earch i , i will visit again in i+tn time, and i will get ticket if i+tn>=a[i]
         for(int i =0;i<n;i++){
             t = (arr[i] - i)/n;
+            //(arr[i]-i)%n !=0  this condition is to check whether there was a perfect devision.
             if(arr[i]>i && (arr[i]-i)%n !=0){
                 t+=1;
             }
             if((i+t*n)<min){
-                min =i+t*n;
+                min = i+t*n;
             }
-
         }
+        //we have to return the window
         return min%n+1;
     }
 }
