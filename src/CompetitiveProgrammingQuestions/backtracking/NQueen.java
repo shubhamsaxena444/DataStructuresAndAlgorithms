@@ -47,8 +47,8 @@ public class NQueen {
         //for second row, search for a possible plcae, if found place and recurse , else backtrack
             for(int j =0;j<n;j++){
                     if(isPossible(board,n,row,j)){
-                    board[row][j] =1 ;
-                    sol(board, n,   row+1  );
+                        board[row][j] =1 ;
+                        sol(board, n,   row+1  );
                         //backtrack
                         board[row][j] =0 ;
                     }

@@ -32,26 +32,10 @@ public class SudokuSolver {
                 }
             }
 
-            //if sanity check for input fails then return false
-//            if(!sanity(in)){
-//                System.out.printf("false");
-//                return;
-//            }
             System.out.println( solve(in));
         }
 
-    private static boolean sanity(int[][] in) {
-            int n= in.length;
-        for(int i =0;i<n;i++){
-            for(int j =0;j<n;j++) {
-                if(in[i][j] !=0){
-                    //check for all numbers
-                        if(!isSafeRow(in,i,in[i][j]) || !isSafeCol(in,j,in[i][j]) || !isSafeBox(in,i,j,in[i][j])){
-                        return false;
-                        }
-                }}}
-        return true;
-    }
+
 
     private static boolean solve(int[][] in) {
             //if there is no 0 in the arr, if yes, print sol
