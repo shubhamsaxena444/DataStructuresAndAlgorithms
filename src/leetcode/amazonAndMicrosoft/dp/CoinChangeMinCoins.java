@@ -57,11 +57,14 @@ public class CoinChangeMinCoins {
             for (int j = 0; j < m; j++)
                 if (coins[j] <= i)
                 {
-                    int sub_res = table[i - coins[j]];
-                    if (sub_res != Integer.MAX_VALUE
-                            && sub_res + 1 < table[i])
-                        table[i] = sub_res + 1;
+                    int include = table[i - coins[j]] != Integer.MAX_VALUE ? 1+ table[i - coins[j]] : Integer.MAX_VALUE;
+                    int exclude= table[i];
 
+                   /* if (sub_res != Integer.MAX_VALUE
+                            && sub_res + 1 < dp[i])
+                        dp[i] = sub_res + 1;
+*/
+                    table[i] = Math.min(include,exclude);
 
                 }
 

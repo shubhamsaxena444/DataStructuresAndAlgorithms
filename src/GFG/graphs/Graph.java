@@ -1,7 +1,7 @@
 /**
  * 
  */
-package graphs;
+package GFG.graphs;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

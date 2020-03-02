@@ -1,4 +1,4 @@
-package graphs;
+package GFG.graphs;
 
 public class TestGraph {
 
