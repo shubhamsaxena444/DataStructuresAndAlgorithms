@@ -22,7 +22,7 @@ public class TopologicalSort {
 		final int[] visited = new int[graph.getV()];
 		// call dfs for s =0;
 		graph.printGraph(graph);
-		// System.out.println(Arrays.toString(
+		// FoodSystem.out.println(Arrays.toString(
 		topologicalSort(graph, visited);
 		// ));
 	}

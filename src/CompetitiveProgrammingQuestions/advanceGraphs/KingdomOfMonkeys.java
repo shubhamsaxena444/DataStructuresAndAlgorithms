@@ -92,7 +92,7 @@ public class KingdomOfMonkeys {
             for(int i=1;i<=N;i++)
             {
                 arr[i]=Long.parseLong(st.nextToken());
-                // System.out.println(s);
+                // FoodSystem.out.println(s);
                 state[i]=State.unvisited;
             }
             long max=Long.MIN_VALUE;
@@ -102,7 +102,7 @@ public class KingdomOfMonkeys {
                 if(adj[i]!=null&&state[i]==State.unvisited)
                 {
                     Bfs(i,adj,arr);
-                    // System.out.println(i+" "+sum);
+                    // FoodSystem.out.println(i+" "+sum);
 
                 }
                 max=Math.max(max,sum);

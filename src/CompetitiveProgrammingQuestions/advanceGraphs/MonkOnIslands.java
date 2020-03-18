@@ -56,7 +56,7 @@ public class MonkOnIslands {
             }
 //            int v1 = s.nextInt() - 1;
 //            int v2 = s.nextInt() - 1;
-            // getPathBFS(v, am, v1, v2).stream().forEach(x-> System.out.print(x+" "));
+            // getPathBFS(v, am, v1, v2).stream().forEach(x-> FoodSystem.out.print(x+" "));
           res.add(getPathBFS(v, edge, 0, v-1));
         }
         res.stream().forEach(x-> System.out.println(x));
@@ -72,12 +72,12 @@ public class MonkOnIslands {
             int cur = v2;
             while (cur != v1) {
                 res.add(cur);
-                //System.out.print(cur + " ");
+                //FoodSystem.out.print(cur + " ");
                 int parent = path.get(cur);
                 cur=parent;
             }
             res.add(v1);
-            //System.out.print(v1);
+            //FoodSystem.out.print(v1);
             return res;
         }
         return res;*/

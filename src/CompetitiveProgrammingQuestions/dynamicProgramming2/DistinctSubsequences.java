@@ -28,7 +28,7 @@ Sample Output
 public class DistinctSubsequences {
     public static void main(String[] args) throws IOException {
 
-//        BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
+//        BufferedReader sc = new BufferedReader(new InputStreamReader(FoodSystem.in));
         Scanner sc = new Scanner(System.in);
         int t = Integer.parseInt(sc.nextLine());
 //         sc.readLine();

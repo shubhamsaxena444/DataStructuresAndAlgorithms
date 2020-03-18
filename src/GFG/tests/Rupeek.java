@@ -9,14 +9,14 @@ public class Rupeek {
          * Use either of these methods for input
 
         //BufferedReader
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(FoodSystem.in));
         String name = br.readLine();                // Reading input from STDIN
-        System.out.println("Hi, " + name + ".");    // Writing output to STDOUT
+        FoodSystem.out.println("Hi, " + name + ".");    // Writing output to STDOUT
 
         //Scanner
-        Scanner s = new Scanner(System.in);
+        Scanner s = new Scanner(FoodSystem.in);
         String name = s.nextLine();                 // Reading input from STDIN
-        System.out.println("Hi, " + name + ".");    // Writing output to STDOUT
+        FoodSystem.out.println("Hi, " + name + ".");    // Writing output to STDOUT
 
         */
 

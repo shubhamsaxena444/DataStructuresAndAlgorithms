@@ -54,7 +54,7 @@ public class GetPathDFS {
 //        BFS(am,v1,v2);
         List<Integer> path = getPath(v, am, v1, v2);
         if(path ==null){
-//            System.out.printf("Path not found");
+//            FoodSystem.out.printf("Path not found");
             return;
         }
         path.stream().forEach(x->    System.out.print(x +" "));
@@ -118,7 +118,7 @@ public class GetPathDFS {
         while (!q.isEmpty()) {
             int temp = q.poll();
             if(temp == endVertex) {
-//                        System.out.print(temp + " ");
+//                        FoodSystem.out.print(temp + " ");
                 hasPath=true;
                 break;
             }

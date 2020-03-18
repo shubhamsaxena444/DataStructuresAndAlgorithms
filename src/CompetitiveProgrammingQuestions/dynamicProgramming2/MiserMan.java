@@ -29,7 +29,7 @@ public class MiserMan {
         int minFare=Integer.MAX_VALUE;
         for(int i =0;i<m;i++){
             if(lastBusFare == a[n-1][i] || lastBusFare == a[n-1][i]+1 || lastBusFare == a[n-1][i]-1 || lastBusFare == Integer.MAX_VALUE ){
-//                System.out.println(lastBusFare);
+//                FoodSystem.out.println(lastBusFare);
 
                 minFare =Math.min(minFare,a[n-1][i] + function(a,n-1,m,a[n-1][i]));
             }

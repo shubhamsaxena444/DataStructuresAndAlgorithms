@@ -105,7 +105,7 @@ static class NodeC{
         boolean isFound =false;
         while (!q.isEmpty()) {
             NodeC temp = q.poll();
-//            System.out.print(temp.data + " ");
+//            FoodSystem.out.print(temp.data + " ");
             if (it == str.length()) {
                 isFound =true;
                 break;

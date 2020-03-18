@@ -116,7 +116,7 @@ public class Dijktras {
 			}
 			System.out.println();
 		}
-		// System.out.println(Arrays.toString(dist));
+		// FoodSystem.out.println(Arrays.toString(dist));
 	}
 
 	@Deprecated

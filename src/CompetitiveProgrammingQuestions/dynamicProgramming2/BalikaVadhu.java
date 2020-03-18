@@ -54,7 +54,7 @@ public class BalikaVadhu {
             }
             System.out.println(maxHappiness(s1[i], m, s2[i], n, k[i], dp));
            /* for(int ii =0;ii<=k[i];ii++) {
-                System.out.println("k = "+ii);
+                FoodSystem.out.println("k = "+ii);
                 print(dp, m, n, ii);
             }*/
         }

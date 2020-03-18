@@ -76,7 +76,7 @@ public class AlyonaAndSpreadSheet {
             y= new int[m];
         }
 //        for(int i =0;i<n;i++)
-//            System.out.println(dp[i]+" ");
+//            FoodSystem.out.println(dp[i]+" ");
         for(int i =0;i<k;i++){
 
             if(dp[r[i]] <=l[i]){

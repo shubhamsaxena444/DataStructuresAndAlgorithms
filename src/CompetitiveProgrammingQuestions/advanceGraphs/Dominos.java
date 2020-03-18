@@ -56,10 +56,10 @@ public class Dominos {
             count.add(allPaths.size());
         }//if all vis then connected else false
         count.stream().forEach(x-> System.out.println(x));
-//        System.out.println(allPaths);
+//        FoodSystem.out.println(allPaths);
 //        allPaths.stream().forEach(x->{
-//            x.stream().sorted().forEach(y-> System.out.print(y+" "));
-//            System.out.println();
+//            x.stream().sorted().forEach(y-> FoodSystem.out.print(y+" "));
+//            FoodSystem.out.println();
 //        } );
     }
 

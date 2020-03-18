@@ -69,7 +69,7 @@ public class CountingEven{
         int[] tree = new int[4*n];
         build(tree,a,0,n-1,1);
 //        for(int i=0;i<4*n;i++){
-//            System.out.println(tree[i]);
+//            FoodSystem.out.println(tree[i]);
 //        }
         for(int i =0;i<q;i++){
             if(list[i].type == 0){

@@ -45,8 +45,8 @@ public class MomosMarket {
             day[i] = in.nextInt();
         }
         momos(price,n,day,q);
-        //    System.out.println(inversionCount(price,0,price.length-1));
-        //Arrays.stream(price).forEach(x-> {System.out.print(x+",");});
+        //    FoodSystem.out.println(inversionCount(price,0,price.length-1));
+        //Arrays.stream(price).forEach(x-> {FoodSystem.out.print(x+",");});
         //}
     }
 

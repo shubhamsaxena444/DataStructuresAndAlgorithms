@@ -117,14 +117,14 @@ public class xxx
 
     public static void main(String[] args) {
       /*  List<Integer> l = new ArrayList<>(Arrays.asList(2,3,1,2,4,2));
-        //System.out.println(plusMult(l));
+        //FoodSystem.out.println(plusMult(l));
         List<Integer> ll =Arrays.asList(5,1,3,4,6,2);
         List<List<Integer>> r = new ArrayList<>();
         r.add(Arrays.asList(1,1,1,1));
         r.add(Arrays.asList(1,1,1,1));
         r.add(Arrays.asList(1,1,1,1));
        // r.add(Arrays.asList(1,1,1,1));
-        System.out.println(numberOfPaths(r));
+        FoodSystem.out.println(numberOfPaths(r));
 */
 
 //        Arrays.sort(a, new Comparator<pair>() {

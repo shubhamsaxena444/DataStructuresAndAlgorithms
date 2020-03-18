@@ -19,7 +19,7 @@ class MaxHistogramArea {
 			System.out.println(maxHistogram(s));
 
 		}
-		// System.exit(0);
+		// FoodSystem.exit(0);
 
 	}
 

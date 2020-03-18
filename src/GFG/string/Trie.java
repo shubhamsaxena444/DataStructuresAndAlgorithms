@@ -40,7 +40,7 @@ public class Trie implements TrieIntereface {
 	@Override
 	public void traverse(TrieNode root) {
 		if (root == null) {
-			// System.out.println("empty");
+			// FoodSystem.out.println("empty");
 			return;
 		}
 		// single char case
@@ -51,20 +51,20 @@ public class Trie implements TrieIntereface {
 		/*
 		 * else { for(Entry<Character, TrieNode> e :root.children.entrySet()) {
 		 * if(e.getValue()) } //if for any child we have endiof word
-		 * System.out.println(); return; }
+		 * FoodSystem.out.println(); return; }
 		 */
 		// the idea is to dfs traverse all children key value pair present in root.
 		final TrieNode cur = root;
 		final Map<Character, TrieNode> child = cur.children;
 		for (final Entry<Character, TrieNode> c : child.entrySet()) {
-			// System.out.print(c.getKey());
+			// FoodSystem.out.print(c.getKey());
 			System.out.print(c.getKey());
 			/*
-			 * if (c.getValue().endOfWord == true) { System.out.println(); return; }
+			 * if (c.getValue().endOfWord == true) { FoodSystem.out.println(); return; }
 			 */
 			traverse(c.getValue());
 			/*
-			 * if (root.endOfWord == true) { System.out.println(); return; }
+			 * if (root.endOfWord == true) { FoodSystem.out.println(); return; }
 			 */
 		}
 	}

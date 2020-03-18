@@ -13,8 +13,8 @@ public class StringUtil {
 		final String s = sc.nextLine();
 		// final Map<String, Object> map = noOfSubstringWithKdistinctChars(s,
 		// sc.nextInt());
-		// System.out.println(map.get("num"));
-		// System.out.println(Arrays.toString((String[]) map.get("substrings")));
+		// FoodSystem.out.println(map.get("num"));
+		// FoodSystem.out.println(Arrays.toString((String[]) map.get("substrings")));
 		System.out.println(countWords(s));
 	}
 

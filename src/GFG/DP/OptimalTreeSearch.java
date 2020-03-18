@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package GFG.DP;
 
 /**
  * http://www.geeksforgeeks.org/dynamic-programming-set-24-optimal-binary-search-tree/

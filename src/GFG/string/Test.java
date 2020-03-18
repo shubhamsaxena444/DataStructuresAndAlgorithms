@@ -107,7 +107,7 @@ public class Test {
         while(x<y){
             if(arr[x]+arr[y] == k){
 
-                System.out.println(arr[x]+ " " +arr[y]);
+                FoodSystem.out.println(arr[x]+ " " +arr[y]);
                 x++;
           //      y--;
             }else if(arr[x]+arr[y] > k){
@@ -207,7 +207,7 @@ public class Test {
 
     public static void main(String[] args) {
 
-        // Scanner in = new Scanner(System.in);
+        // Scanner in = new Scanner(FoodSystem.in);
         //   int t = in.nextInt();
         // while(t-->0) {
        /* int n = in.nextInt();
@@ -224,8 +224,8 @@ public class Test {
             day[i] = in.nextInt();
         }*/
 //        momos(price,n,day,q);
-        //    System.out.println(inversionCount(price,0,price.length-1));
-        //Arrays.stream(price).forEach(x-> {System.out.print(x+",");});
+        //    FoodSystem.out.println(inversionCount(price,0,price.length-1));
+        //Arrays.stream(price).forEach(x-> {FoodSystem.out.print(x+",");});
         //}
         Scanner in = new Scanner(System.in);
         int t = in.nextInt();

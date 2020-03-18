@@ -106,7 +106,7 @@ public class WeightedGraph implements GraphInterface<Node> {
 	public void printGraph(WeightedGraph graph, char[] vertex) {
 		for (int i = 0; i < v; i++) {
 			System.out.println("Adjacency list of vertex " + vertex[i]);
-			// System.out.print(" is ");
+			// FoodSystem.out.print(" is ");
 			for (final Node pCrawl : list[i]) {
 				System.out.print(" -" + pCrawl.weight + "-> " + vertex[pCrawl.vertex]);
 			}

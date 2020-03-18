@@ -19,7 +19,7 @@ public class minDistanceToConvertAtoB {
 			System.out.println(editDist(str1, str2));
 
 		}
-		// System.out.println(editDist("ABC", "BAC"));
+		// FoodSystem.out.println(editDist("ABC", "BAC"));
 	}
 
 	private static int editDist(String str1, String str2) {

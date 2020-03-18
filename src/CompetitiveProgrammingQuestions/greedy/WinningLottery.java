@@ -80,7 +80,7 @@ public class WinningLottery {
         res[0] = s + 1;  // The initially subtracted 1 is
         // incorporated here
 
-        //System.out.print("Smallest number is ");
+        //FoodSystem.out.print("Smallest number is ");
         for (int i=0; i<m; i++)
             System.out.print(res[i]);
     }

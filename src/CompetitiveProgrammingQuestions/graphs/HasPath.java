@@ -80,7 +80,7 @@ public class HasPath {
         while (!q.isEmpty()) {
             int temp = q.poll();
             if(temp == endVertex) {
-//                        System.out.print(temp + " ");
+//                        FoodSystem.out.print(temp + " ");
                 hasPath=true;
                 break;
             }

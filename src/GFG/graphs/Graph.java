@@ -180,7 +180,7 @@ public class Graph implements GraphInterface<Integer> {
 	public void printGraph(Graph graph, char[] vertex) {
 		for (int i = 0; i < v; i++) {
 			System.out.println("Adjacency list of vertex " + vertex[i]);
-			// System.out.print(" is ");
+			// FoodSystem.out.print(" is ");
 			for (final Integer pCrawl : list[i]) {
 				System.out.print(" -> " + vertex[pCrawl]);
 			}
@@ -218,7 +218,7 @@ public class Graph implements GraphInterface<Integer> {
 			// fetch first and add adjacent to queue
 			var = queue.pollFirst();
 			res.add(var);
-			// System.out.println(var);
+			// FoodSystem.out.println(var);
 
 			g.getAllAdjacentVertices(var).forEach(x -> {
 				if (visited[x] == 0) {

@@ -26,8 +26,8 @@ public class LCS {
     private static int lcs(String s1, String s2) {
         int m = s1.length();
         int n = s2.length();
-//        System.out.println(s1);
-//        System.out.println(s2);
+//        FoodSystem.out.println(s1);
+//        FoodSystem.out.println(s2);
         int dp[][] = new int[m+1][n+1];
         //let dp represent the first i chars of s1 and first j chars of s2
         //if i ==0 , or j==0 ,then dp[i][j]  =0;

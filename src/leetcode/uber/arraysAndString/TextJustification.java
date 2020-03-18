@@ -72,8 +72,6 @@ public class TextJustification {
    }
     public List<String> fullJustify(String[] words, int maxWidth) {
         int currentWidth = 0;
-        int wordCount = 0;
-        int lineNumber = 0;
         int charLength = 0;
         List<String> list = new ArrayList<>();
         List<String> output = new ArrayList<>();

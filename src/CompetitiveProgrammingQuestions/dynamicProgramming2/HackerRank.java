@@ -40,7 +40,7 @@ public class HackerRank {
 
 
     public static void main(String[] args) {
-      //  System.out.println(findQualifiedNumbers(new int[]{123,123,546213,23435,1,316}));
+      //  FoodSystem.out.println(findQualifiedNumbers(new int[]{123,123,546213,23435,1,316}));
 
         String a ="2112";
 

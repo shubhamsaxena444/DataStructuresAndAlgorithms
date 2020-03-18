@@ -82,7 +82,7 @@ public class HeapSort {
 			// array i.e, size/2.
 			buildHeap(h);
 			// now we hae a heap ready.
-			// System.out.println(Arrays.toString(h.a));
+			// FoodSystem.out.println(Arrays.toString(h.a));
 			// swap the max element i.e, root with last heap element
 			swap(h.a, 0, h.size - 1);
 			// decrease the size of the heap by 1

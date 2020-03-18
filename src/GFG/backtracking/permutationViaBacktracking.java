@@ -1,4 +1,4 @@
-package backtracking;
+package GFG.backtracking;
 
 import java.util.Arrays;
 import java.util.Scanner;

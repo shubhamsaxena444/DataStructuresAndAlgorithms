@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 public class sol1 {
     public static void main(String[] args) {
         Scanner sc  = new Scanner(System.in );
-       // Arrays.stream(IntegertoBase(-12)).forEach(x-> System.out.print(x +" "));
+       // Arrays.stream(IntegertoBase(-12)).forEach(x-> FoodSystem.out.print(x +" "));
 //        solution(A,B)
     }
 
@@ -104,7 +104,7 @@ public class sol1 {
         return a.stream().mapToInt(x -> x).toArray();
        // printing binary array in reverse order
 //       for (int j = i - 1; j >= 0; j--)
-//           System.out.print(binaryNum[j]);
+//           FoodSystem.out.print(binaryNum[j]);
    }
 
     /*static  int[] integerToBitBF(int n) {

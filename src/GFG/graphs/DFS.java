@@ -26,7 +26,7 @@ public class DFS {
 		// mark s as visited
 		visited[s] = 1;
 
-		// System.out.println(Arrays.toString(visited));
+		// FoodSystem.out.println(Arrays.toString(visited));
 		System.out.println(s);
 		// see if there is any adjacent of s which is unvisited.
 		// for (int i = 0; i < Graph.v; i++) {

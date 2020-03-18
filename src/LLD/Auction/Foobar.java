@@ -74,18 +74,18 @@ public class Foobar {
         auction.closeBidding();
         //calculate seller profit
        int sellerProfit= auction.getSeller().getProfit(auction);
-        System.out.println("seller profit : "+ sellerProfit);
+        FoodSystem.out.println("seller profit : "+ sellerProfit);
         //calculate company profit
         int companyProfit= collectCompanyProfit(auction);
 
-        System.out.println("company profit : "+ companyProfit);
+        FoodSystem.out.println("company profit : "+ companyProfit);
         //increase company's revenue
         companyNetProfit = companyNetProfit + collectCompanyProfit(auction);
 
         //find winner
         Bid winner = auction.getHighestUniqueBid();
 
-        System.out.println(winner!=null ? winner.getBuyer().getName():"Nobody won");
+        FoodSystem.out.println(winner!=null ? winner.getBuyer().getName():"Nobody won");
 */
         testCase2();
        // testCase1();

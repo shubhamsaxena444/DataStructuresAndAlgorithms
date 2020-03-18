@@ -77,7 +77,7 @@ public class Horrible {
             long[] lazy = new long[4 * tlist[j].n];
             build(tree, tlist[j].a, 0, tlist[j].n - 1, 1);
       /*  for(int i=0;i<4*n;i++){
-            System.out.println(tree[i]);
+            FoodSystem.out.println(tree[i]);
         }*/
             for (int i = 0; i < tlist[j].c; i++) {
                 if (tlist[j].list[i].type == 0) {

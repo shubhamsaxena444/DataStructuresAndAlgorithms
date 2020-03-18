@@ -52,7 +52,7 @@ public class AllConnectedComponenets {
                 am[b][a] =1;
             }
                 List<List<Integer>> allPaths = getConnectedComponents(v, am);
-    //        System.out.println(allPaths);
+    //        FoodSystem.out.println(allPaths);
         allPaths.stream().forEach(x->{
             x.stream().sorted().forEach(y-> System.out.print(y+" "));
             System.out.println();

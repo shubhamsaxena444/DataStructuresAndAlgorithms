@@ -136,16 +136,16 @@ import java.util.LinkedList;
                 }
                 List<List<Integer>> res = g.printSCCs();
 //                res.stream().forEach(x->{
-//               x.stream().forEach(y-> System.out.print(y+" "));
-//               System.out.println();
+//               x.stream().forEach(y-> FoodSystem.out.print(y+" "));
+//               FoodSystem.out.println();
 //           });
                 count.add(res.size());
             }
             count.stream().forEach(x-> System.out.println(x));
 //
 //           res.stream().forEach(x->{
-//               x.stream().forEach(y-> System.out.print(y+" "));
-//               System.out.println();
+//               x.stream().forEach(y-> FoodSystem.out.print(y+" "));
+//               FoodSystem.out.println();
 //           });
         }
     }

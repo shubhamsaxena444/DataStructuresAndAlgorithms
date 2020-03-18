@@ -207,7 +207,7 @@ class Main {
             answer+=(Search(root,XoR,k,20));
             Insert(root,XoR,20);
         }
-        //System.out.println(answer);
+        //FoodSystem.out.println(answer);
         long equalCount=findSubarrCntEqualToK(arr,n,k);
         long greaterCount=(int) (Math.pow(2, arr.length)-(equalCount+answer));
 
