@@ -9,7 +9,7 @@ Notes
 Your solution should run in linear time and not take memory more than O(height of T).
 Assume all values in BST are distinct.*/
 public class TwoSumBinaryTree {
-
+//OR MAYBE JUST CONVERT TO DLL
     /*
     *
 class BST{

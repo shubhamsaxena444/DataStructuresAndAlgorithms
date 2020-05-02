@@ -1,4 +1,4 @@
-package leetcode.uber.amazon.trees;
+package leetcode.amazonAndMicrosoft.trees;
 
 import java.util.*;
 
