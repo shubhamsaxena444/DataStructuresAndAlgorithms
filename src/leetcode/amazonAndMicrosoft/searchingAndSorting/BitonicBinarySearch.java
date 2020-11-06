@@ -3,7 +3,23 @@ package leetcode.amazonAndMicrosoft.searchingAndSorting;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+/*Problem Description
 
+Given a bitonic sequence A of N distinct elements, write a program to find a given element B in the bitonic sequence in O(logN) time.
+
+NOTE:
+
+A Bitonic Sequence is a sequence of numbers which is first strictly increasing then after a point strictly decreasing.
+
+
+Problem Constraints
+3 <= N <= 105
+
+1 <= A[i], B <= 108
+
+Given array always contain a bitonic point.
+
+Array A always contain distinct elements.*/
 public class BitonicBinarySearch {
 
 
